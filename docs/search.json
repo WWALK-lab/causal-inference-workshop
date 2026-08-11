@@ -39,7 +39,7 @@
     "href": "index.html#a-causal-workflow",
     "title": "Causal Inference & DAGs",
     "section": "A causal workflow",
-    "text": "A causal workflow\n\nRead the literature, develop hypotheses and understanding of the system\nDevelop research question(s) of interest\nBuild a DAG** representing the system (step repeated many times after discussions with collaborators, co-authors, etc)\nIdentify data required to answer questions of interest\nCollect data\nBuild statistical models to test question\nReport DAG + results"
+    "text": "A causal workflow\n\nread the literature, develop hypotheses and understanding of the system\ndevelop research question(s) of interest\nbuild a DAG** representing the system (step repeated many times after discussions with collaborators, co-authors, etc)\nidentify data required to answer questions of interest\ncollect data\nbuild statistical models to test question\nreport DAG + results"
   },
   {
     "objectID": "index.html#dags-a-tool-for-causal-inference",

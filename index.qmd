@@ -72,19 +72,19 @@ format:
 
 ## A causal workflow
 
-1.  Read the literature, develop hypotheses and understanding of the system
+1.  read the literature, develop hypotheses and understanding of the system
 
-2.  Develop research question(s) of interest
+2.  develop research question(s) of interest
 
-3.  Build a DAG** representing the system (step repeated many times after discussions with collaborators, co-authors, etc)
+3.  build a DAG** representing the system (step repeated many times after discussions with collaborators, co-authors, etc)
 
-4.  Identify data required to answer questions of interest
+4.  identify data required to answer questions of interest
 
-5.  Collect data
+5.  collect data
 
-6.  Build statistical models to test question
+6.  build statistical models to test question
 
-7.  Report DAG + results
+7.  report DAG + results
 
 
 ## DAGs : a tool for causal inference {.smaller}
