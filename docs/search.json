@@ -60,7 +60,7 @@
     "href": "index.html#example-question-of-interest",
     "title": "Causal Inference & DAGs",
     "section": "Example: question of interest",
-    "text": "Example: question of interest"
+    "text": "Example: question of interest\n!!! I am not a mammologist !!!\n\nWhat is the effect of anthropogenic disturbance on snowshoe hare abundance?\nWhat disturbance type has the biggest impact on snowshoe hare abundance?"
   },
   {
     "objectID": "index.html#example-building-the-dag",
@@ -74,28 +74,28 @@
     "href": "index.html#example-identifying-the-adjustment-set",
     "title": "Causal Inference & DAGs",
     "section": "Example: identifying the adjustment set",
-    "text": "Example: identifying the adjustment set"
+    "text": "Example: identifying the adjustment set\nQ1: What is the effect of anthropogenic disturbance on snowshoe hare abundance?"
   },
   {
     "objectID": "index.html#example-building-a-model",
     "href": "index.html#example-building-a-model",
     "title": "Causal Inference & DAGs",
     "section": "Example: building a model",
-    "text": "Example: building a model"
+    "text": "Example: building a model\n\nmy “adjustment set” indicates what variables I need to add to my model to answer my question\npay attention to total effect vs direct effect\nyou can only interpret the “exposure” (e.g., independent variable) that you have adjusted for\n\n\nmod &lt;- lm(abundance ~ intensity : type, data = snowshoe_hare)\n\n\nNOTE: interactions are not explicitly included in adjustment sets"
   },
   {
     "objectID": "index.html#example-asking-another-question",
     "href": "index.html#example-asking-another-question",
     "title": "Causal Inference & DAGs",
     "section": "Example: asking another question",
-    "text": "Example: asking another question"
+    "text": "Example: asking another question\nQ2: What are the effects of different disturbance types?\n\n\nmod2 &lt;- lm(abundance ~ type, data = snowshoe_hare)"
   },
   {
-    "objectID": "index.html#example-asking-another-another-question",
-    "href": "index.html#example-asking-another-another-question",
+    "objectID": "index.html#example-my-model-fit-is-bad",
+    "href": "index.html#example-my-model-fit-is-bad",
     "title": "Causal Inference & DAGs",
-    "section": "Example: asking another another question",
-    "text": "Example: asking another another question"
+    "section": "Example: my model fit is bad???",
+    "text": "Example: my model fit is bad???\n\nyou can add other variables to your model that improve model fit (e.g., season or site), if they are not confounders aka your model is still correctly adjusted\ncannot interpret these effects"
   },
   {
     "objectID": "index.html#table-2-fallacy",

@@ -122,15 +122,59 @@ format:
 
 ## Example: question of interest
 
+!!! I am not a mammologist !!! 
+
+1. What is the effect of anthropogenic disturbance on snowshoe hare abundance? 
+1. What disturbance type has the biggest impact on snowshoe hare abundance? 
+
 ## Example: building the DAG
+
+![](presentation_imgs/DAG.png)
+
 
 ## Example: identifying the adjustment set
 
+Q1: What is the effect of anthropogenic disturbance on snowshoe hare abundance? 
+
+![](presentation_imgs/adjustmentset.png)
+
 ## Example: building a model
 
-## Example: asking another question
+- my "adjustment set" indicates what variables I need to add to my model to answer my question 
+- pay attention to total effect vs direct effect 
+- you can only interpret the "exposure" (e.g., independent variable) that you have adjusted for 
 
-## Example: asking another another question
+```{r}
+#| echo: true
+#| eval: false
+
+mod <- lm(abundance ~ intensity : type, data = snowshoe_hare)
+
+```
+
+- NOTE: interactions are not explicitly included in adjustment sets
+
+## Example: asking another question{.scrollable}
+
+Q2: What are the effects of different disturbance types?  
+
+![](presentation_imgs/adjustmentset2.png)
+```{r}
+#| echo: true
+#| eval: false
+
+mod2 <- lm(abundance ~ type, data = snowshoe_hare)
+
+```
+
+## Example: my model fit is bad??? 
+
+- you can add other variables to your model that improve model fit (e.g., season or site), if they are not confounders aka your model is still correctly adjusted
+- cannot interpret these effects 
+
+![](presentation_imgs/season.png)
+
+
 
 ## Table 2 fallacy
 
